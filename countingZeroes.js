@@ -3,12 +3,13 @@
 // n= ? ,(1-n)
 // value=100,200,10000
 
-let myArray=[];
-function countingZeroes(n){ 
-for(i=0;i<=100;i++){
+
+function countingZeroes(n){
+  let myArray=[]; 
+for(i=1;i<=n;i++){
   myArray.push(i);
 }
-return myArray.toString().split('').filter(n=> myArray==0).length;
+return myArray.toString().split('').filter(myArray=> myArray==0).length;
 
 }
 console.log(countingZeroes(100))

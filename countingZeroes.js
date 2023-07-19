@@ -4,8 +4,11 @@
 // value=100,200,10000
 
 let myArray=[];
+function countingZeroes(n){ 
 for(i=0;i<=100;i++){
   myArray.push(i);
 }
-console.log(myArray);
-myArray.find
+return myArray.toString().split('').filter(n=> myArray==0).length;
+
+}
+console.log(countingZeroes(100))

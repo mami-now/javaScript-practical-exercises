@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> COUNT DOWN</title>
+
+</head>
+<body>
+
+  <p id="value" style="text-align: center; margin-bottom: 40px;"> 10</p>
+  <div id=""  style="display: flex; justify-content: center; ">
+<button id="five"    style="padding: 20px ; background-color: aquamarine; color: black;">+5s</button>
+<button   id="tens"   style="padding: 20px; background-color: lightblue ;color:black;">+10s</button>
+<button  id="fifteen"  style="padding: 20px; background-color: lightcoral; color: black;">+15s</button>
+</div>
+ 
+<script>
+const counts = document.getElementById('value');
+const btn = document.querySelectorAll('button');
+let second=10;
+let tens=document.getElementById('tens');
+tens.addEventListener('click',function(){
+  return second=second+10;
+});
+let five=document.getElementById('five');
+five.addEventListener('click', function(){
+  return second=second+5;
+});
+let fifteen=document.getElementById('fifteen');
+fifteen.addEventListener('click',function(){
+  return second=second+15;
+})
+let stopWatch= setInterval(function(){
+  if(second <= 0){
+    clearInterval(stopWatch);
+  }
+  counts.textContent=second;
+  second--
+},1000)
+
+
+
+</script>
+</body>
+</html>
+\
+
+

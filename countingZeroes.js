@@ -12,6 +12,6 @@ for(i=1;i<=n;i++){
 return myArray.toString().split('').filter(myArray=> myArray==0).length;
 
 }
-console.log(countingZeroes(10))
+console.log(countingZeroes(100))
 console.log(countingZeroes(200))
 console.log(countingZeroes(1000))
